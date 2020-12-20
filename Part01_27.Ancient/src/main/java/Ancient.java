@@ -5,7 +5,13 @@ public class Ancient {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        
+        System.out.println("Give a year: ");
+        int input = Integer.valueOf(scan.nextLine());
+        int year = 2015;
 
-        // Write your program here
+        if (input < year) {
+            System.out.println("Ancient history!");
+        }
     }
 }
