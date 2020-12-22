@@ -5,6 +5,11 @@ public class Counting {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int input = Integer.valueOf(scanner.nextLine());
+        for (int x = 0; x <= input; x++) {
+            System.out.println(x);
+
+        }
 
     }
 }
