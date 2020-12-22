@@ -27,14 +27,14 @@ public class RepeatingBreakingAndRemembering {
         }
         
         int oddNumbers = counter - counterEven;
-        double average = (double) sum / countOfNumbers;
+        double average = (double) sum / counter;
 
         System.out.println("Thx! Bye!");
         System.out.println("Sum: " + sum);
         System.out.println("Numbers: " + counter);
         System.out.println("Average: " + average);
         System.out.println("Even: " + counterEven);
-        System.out.println("Odd: " + counterOdd);
+        System.out.println("Odd: " + oddNumbers);
 
     }
 }
