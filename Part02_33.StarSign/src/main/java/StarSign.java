@@ -1,36 +1,48 @@
 
 public class StarSign {
-
+ 
     public static void main(String[] args) {
 
-        
-        //The tests are not checking the main, so you can modify it freely.
-        //NB: If the tests don't seem to pass, you should try the methods here
-        //in the main to make sure they print the correct shapes!
-        
         printStars(3);
-        System.out.println("\n---");  // printing --- between the shapes
+        System.out.println("\n---"); 
         printSquare(4);
         System.out.println("\n---");
         printRectangle(5, 6);
         System.out.println("\n---");
         printTriangle(3);
-        System.out.println("\n---");
+        System.out.println("\n---"); 
     }
 
     public static void printStars(int number) {
-        // first part of the exercise
+        int x = 0;
+        while (x < number) {
+            System.out.print("*");
+            x++;
+        }
+        System.out.println("");
     }
 
     public static void printSquare(int size) {
-        // second part of the exercise
+        int y = 1;
+        while (y <= size) {
+            printStars(size);
+            y++;
+        }
     }
 
     public static void printRectangle(int width, int height) {
-        // third part of the exercise
+        int z = 1;
+        while (z <= height) {
+            printStars(width);
+            z++;
+        }
     }
 
     public static void printTriangle(int size) {
-        // fourth part of the exercise
+        int a = 1;
+        while (a <= size) {
+            printStars(a);
+            a++;
+        }
     }
 }
