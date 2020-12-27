@@ -17,5 +17,12 @@ public class RememberTheseNumbers {
             numbers.add(luku);
         }
 
+        int index = 0;
+        while (index < numbers.size()) {
+            System.out.println(numbers.get(index));
+            index++;
+
+        }
+
     }
 }
