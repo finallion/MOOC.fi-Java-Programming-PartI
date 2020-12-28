@@ -24,5 +24,9 @@ public class PersonalInformationCollection {
 
             infoCollection.add(new PersonalInformation(name, lastName, ident));
         }
+        
+        for (PersonalInformation personalInformation: infoCollection) {
+            System.out.println(personalInformation.getFirstName() + " " + personalInformation.getLastName());
+        }
     }
 }
