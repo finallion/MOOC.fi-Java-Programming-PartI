@@ -31,9 +31,9 @@ public class Room {
 
         Person shortest = this.rooms.get(0);
         
-        for (Person random : rooms) {
-            if (random.getHeight() < shortest.getHeight()) {
-                shortest = random;
+        for (Person person : rooms) {
+            if (person.getHeight() < shortest.getHeight()) {
+                shortest = person;
             }
         }
         return shortest;
