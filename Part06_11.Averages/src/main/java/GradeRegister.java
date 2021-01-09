@@ -43,4 +43,31 @@ public class GradeRegister {
 
         return grade;
     }
+    
+    public double averageOfGrades(){
+        if (grades.isEmpty()){
+            return -1;
+        }
+
+        int counter = 0;
+
+        for (int grade: grades){
+            counter += grade; 
+        }
+        return (double) counter / this.grades.size();
+    }
+
+    public double averageOfPoints(){
+        if (examPoints.isEmpty()){
+            return -1;
+        }
+
+       int counter = 0;
+
+       for (int points: examPoints){
+           counter += points;
+       }
+
+       return (double) counter / examPoints.size();
+    }
 }
